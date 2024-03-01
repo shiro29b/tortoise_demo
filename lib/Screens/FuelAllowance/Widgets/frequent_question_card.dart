@@ -14,7 +14,6 @@ class FrequentQuestionCard extends StatelessWidget {
     return Padding(
       padding: EdgeInsets.symmetric(horizontal: 32.w),
       child: Container(
-        height: 76.h,
         decoration: BoxDecoration(
           border: Border.all(color: const Color(0xffeeeeee)),
           borderRadius: BorderRadius.circular(12),

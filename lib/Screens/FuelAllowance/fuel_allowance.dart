@@ -52,12 +52,7 @@ class _FuelAllowanceState extends State<FuelAllowance> {
               height: 32.h,
             ),
             BenefitCard2(
-              onPressed: () {
-                Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                        builder: (context) => const FuelAllowance()));
-              },
+              onPressed: () {},
               title: "Fuel Allowance",
               imgPath: 'assets/fuel_design.png ',
               bg: const Color(0xffFEAA6C),
@@ -296,7 +291,7 @@ class _FuelAllowanceState extends State<FuelAllowance> {
       builder: (BuildContext context) {
         return Container(
           width: double.infinity.w,
-          height: 600.h,
+          height: 630.h,
           padding: const EdgeInsets.all(16),
           child: Column(
             children: [
@@ -430,4 +425,3 @@ class _FuelAllowanceState extends State<FuelAllowance> {
     );
   }
 }
-
