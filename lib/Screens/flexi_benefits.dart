@@ -1,4 +1,4 @@
-import 'package:demo/Screens/fuel_allowance.dart';
+import 'package:demo/Screens/FuelAllowance/fuel_allowance.dart';
 import 'package:demo/Widgets/custom_button.dart';
 import 'package:dotted_line/dotted_line.dart';
 import 'package:flutter/material.dart';
@@ -12,7 +12,7 @@ class FlexiBenefits extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
         child: Scaffold(
-          backgroundColor: const Color(0xffFAF4EA),
+      backgroundColor: const Color(0xffFAF4EA),
       body: Stack(
         children: [
           SingleChildScrollView(
@@ -285,7 +285,13 @@ class BenefitCard extends StatelessWidget {
                           fontSize: 14.sp,
                           fontWeight: FontWeight.w600),
                     ),
-                    const Icon(Icons.arrow_circle_right),
+                    Align(
+                      alignment: Alignment.topRight,
+                      child: Image.asset(
+                        "assets/arrow_right.png",
+                        scale: 3,
+                      ),
+                    ),
                   ],
                 ),
               ),
